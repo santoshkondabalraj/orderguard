@@ -1,0 +1,48 @@
+# --- Secrets and local environment ---
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Oracle ATP wallet and cert/key materials
+atp_wallet/*
+!atp_wallet/README
+*.pem
+*.key
+*.p12
+*.jks
+*.pfx
+*.cer
+*.crt
+
+# --- Runtime/generated data (may contain sensitive operational details) ---
+rca_documents/
+*.log
+logs/
+
+# --- Python cache/build artifacts ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+
+# --- IDE/system files ---
+.idea/
+.vscode/
+*.swp
+*.swo
+Thumbs.db
+.DS_Store
